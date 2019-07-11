@@ -3,13 +3,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function init() {
+  mobileCheck()
 }
 
-function sarah() {
-  var name = document.getElementById("first-name").value;
-  console.log(name);
-  if(name == "sarah") {
-    window.alert("bussy");
+function mobileCheck() {
+  if (screen.width <= 699) {
+      document.location = "thanks.html";
   }
-  console.log("running");
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function validate() {
+  window.alert("hello");
+  return true
 }
