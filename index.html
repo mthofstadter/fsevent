@@ -7,7 +7,7 @@
   <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   -->
   <link rel='stylesheet' type='text/css' href='style.css' />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <script src="main.js"></script>
 
   <title>FS Lunch & Learn</title>
@@ -21,33 +21,37 @@
     <img src="images/logoWhite.png" alt="First Scribe Logo" height="50px" width="289px"></img>
   </div>
 
+<div id="main">
 <div id="header-div">
   <h1 id="header">Accessibility Lunch & Learn</h1>
 </div>
 
 <div id="info">
-  <p>A paragraph is a group of words put together to form a group that is usually longer than a sentence. Paragraphs are often made up of several sentences. There are usually between three and eight sentences. Paragraphs can begin with an indentation (about five spaces), or by missing a line out, and then starting again. This makes it easier to see when one paragraph ends and another begins.
-In most organized forms of writing, such as essays, paragraphs contain a topic sentence . This topic sentence of the paragraph tells the reader what the paragraph will be about. Essays usually have multiple paragraphs that make claims to support a thesis statement, which is the central idea of the essay.
-Paragraphs may signal when the writer changes topics. Each paragraph may have a number of sentences, depending on the topic.
+  <p>We want to help you protect your company and serve your customers by making your website accessible to everyone.
+    While ecommerce, banking , dining, medical and hospitality industries are targeted most for accessibility lawsuits,
+    every website benefits from accessibility. We specialize in WCAG 2.1 AA compliance and partner with an accessibility auditor to test your website.
+<br><br>Come join First Scribe and our team of experts for our Accessibility Lunch & Learn event to know more about how accessibility
+compliance is affecting your website and what to do about it.
   </p>
 </div>
 
-<form action="../fsevent/thanks.html" method="post" onsubmit="return validate()">
+<form action="thanks.html" onsubmit="return validate()" method="post">
   <h2>RSVP</h2>
   <div class="row">
     <label>First Name:</label>
-    <input type="text" id="first-name" name="first-name" onchange="sarah()">
+    <input type="text" id="first-name" name="first-name" autocomplete="off" onchange="resetStyle(this)">
   </div>
   <div class="row">
     <label>Last Name:</label>
-    <input type="text" id="last-name" name="last-name">
+    <input type="text" id="last-name" name="last-name" autocomplete="off" onchange="resetStyle(this)">
   </div>
   <div class="row">
     <label>E-mail:</label>
-    <input type="email" id="e-mail" name="email">
+    <input type="email" id="e-mail" name="e-mail" autocomplete="off">
   </div>
   <button type="submit">Submit</button>
 </form>
+</div>
 
 
 <div id="boxContainer">

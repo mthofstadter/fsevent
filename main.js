@@ -18,6 +18,31 @@ function validateEmail(email) {
 }
 
 function validate() {
-  window.alert("hello");
-  return true
+  var fname = document.getElementById("first-name");
+  var lname = document.getElementById("last-name");
+  var emailAddress = document.getElementById("e-mail");
+  var valid = true;
+
+  if(fname.value == "") {
+    fname.style.border = "3px solid #E74C3C";
+    fname.style.background = "#F5B7B1";
+    valid = false;
+  }
+
+  if(lname.value == "") {
+    lname.style.border = "3px solid #E74C3C";
+    lname.style.background = "#F5B7B1";
+    valid = false;
+  }
+
+  if(validateEmail(emailAddress.value) == false) {
+    valid = false;
+  }
+
+  return valid;
+}
+
+function resetStyle(element) {
+  element.style.background = "white";
+  element.style.border = "3px solid white";
 }
