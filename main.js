@@ -46,3 +46,13 @@ function resetStyle(element) {
   element.style.background = "white";
   element.style.border = "3px solid white";
 }
+
+function invalidText() {
+  var errorMsg = "";
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+    errorMsg = "Value too small";
+  } else {
+    txt = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
