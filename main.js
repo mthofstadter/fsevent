@@ -39,6 +39,9 @@ function validate() {
     valid = false;
   }
 
+  if(valid) {
+    setTimeout("location.href = 'thanks.html';",100);
+  }
   return valid;
 }
 
