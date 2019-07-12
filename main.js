@@ -24,18 +24,26 @@ function validate() {
   var valid = true;
 
   if(fname.value == "") {
-    fname.style.border = "3px solid #E74C3C";
-    fname.style.background = "#F5B7B1";
+    fname.setCustomValidity("Field Required");
+    document.getElementById('fn-error').innerHTML="Field Required";
     valid = false;
   }
 
   if(lname.value == "") {
-    lname.style.border = "3px solid #E74C3C";
-    lname.style.background = "#F5B7B1";
+    lname.setCustomValidity("Field Required");
+    document.getElementById('ln-error').innerHTML="Field Required";
     valid = false;
   }
 
-  if(validateEmail(emailAddress.value) == false) {
+  if(emailAddress.value == "") {
+    emailAddress.setCustomValidity("Field Required");
+    document.getElementById('em-error').innerHTML="Field Required";
+    valid = false;
+  }
+
+  else if(validateEmail(emailAddress.value) == false) {
+    emailAddress.setCustomValidity("Invalid E-mail");
+    document.getElementById('em-error').innerHTML="Invalid E-mail";
     valid = false;
   }
 
@@ -46,16 +54,14 @@ function validate() {
 }
 
 function resetStyle(element) {
-  element.style.background = "white";
-  element.style.border = "3px solid white";
-}
-
-function invalidText() {
-  var errorMsg = "";
-  if (document.getElementById("id1").validity.rangeUnderflow) {
-    errorMsg = "Value too small";
-  } else {
-    txt = "Input OK";
+  element.setCustomValidity("");
+  if(element.id == "first-name") {
+    document.getElementById('fn-error').innerHTML="";
   }
-  document.getElementById("demo").innerHTML = txt;
+  else if(element.id == "last-name") {
+    document.getElementById('ln-error').innerHTML="";
+  }
+  else if(element.id == "e-mail") {
+    document.getElementById('em-error').innerHTML="";
+  }
 }

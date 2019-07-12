@@ -28,7 +28,7 @@
 
 <div id="info">
   <p>We want to help you protect your company and serve your customers by making your website accessible to everyone.
-    While ecommerce, banking , dining, medical and hospitality industries are targeted most for accessibility lawsuits,
+    While ecommerce, banking, dining, medical and hospitality industries are targeted most for accessibility lawsuits,
     every website benefits from accessibility. We specialize in WCAG 2.1 AA compliance and partner with an accessibility auditor to test your website.
 <br><br>Come join First Scribe and our team of experts for our Accessibility Lunch & Learn event to know more about how accessibility
 compliance is affecting your website and what to do about it.
@@ -41,14 +41,17 @@ action="https://docs.google.com/forms/d/e/1FAIpQLSfel7UZB6sbaMhjB7i3_UUTMVqYhXNc
   <div class="row">
     <label>First Name:</label>
     <input type="text" id="first-name" name="entry.1115986317" autocomplete="off" onchange="resetStyle(this)">
+    <span id="fn-error"></span>
   </div>
   <div class="row">
     <label>Last Name:</label>
     <input type="text" id="last-name" name="entry.418842620" autocomplete="off" onchange="resetStyle(this)">
+    <span id="ln-error"></span>
   </div>
   <div class="row">
     <label>E-mail:</label>
-    <input type="email" id="e-mail" name="entry.987508438" autocomplete="off">
+    <input type="text" id="e-mail" name="entry.987508438" autocomplete="off" onchange="resetStyle(this)">
+    <span id="em-error"></span>
   </div>
   <button type="submit">Submit</button>
 </form>
