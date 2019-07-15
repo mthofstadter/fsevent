@@ -50,6 +50,9 @@ h1 {
   #main {
     margin-left: 5%;
   }
+  #header-div {
+    width: 75% !important;
+  }
 }
 
 #header-div {
@@ -101,12 +104,7 @@ h2 {
 
 #form-div {
   width: 380px;
-}
-
-@media all and (max-width: 1190px) {
-  #form-div {
-    margin-bottom: 300px;
-  }
+  margin-bottom: 50px;
 }
 
 .row {
@@ -192,15 +190,6 @@ button:hover {
   z-index: 3;
 }
 
-@media all and (max-width: 920px) {
-  #boxContainer {
-    position: inline;
-    flex-flow: column;
-    bottom: 10px;
-    justify-content: center;
-  }
-}
-
 .infoBox {
   background-color: #212F3C;
   margin: 5px 0px 5px 0px;
@@ -244,4 +233,22 @@ button:hover {
   height: 20%;
   width: 100%;
   background-color: #CF1B1F;
+}
+
+@media all and (max-width: 920px) {
+  #boxContainer {
+    position: relative;
+    flex-flow: column;
+    bottom: 10px;
+    justify-content: center;
+    margin-left: 5%;
+  }
+
+  #bottomBar {
+    display: none;
+  }
+
+  .infoBox {
+    width: 50% !important;
+  }
 }
