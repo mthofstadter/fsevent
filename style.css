@@ -57,22 +57,9 @@ h1 {
   flex-flow: row wrap;
 }
 
-@media all and (max-width: 1100px) {
-  #main {
-    margin-left: 5%;
-  }
-  #header-div {
-    width: 75% !important;
-  }
-
-  #form-div {
-    margin-bottom: 300px;
-  }
-}
-
 #header-div {
   float: left;
-  width: 50%;
+  width: 55%;
   margin-right: 5%;
 }
 
@@ -191,6 +178,19 @@ button {
 
 button:hover {
   background-color: #5D6D7E;
+}
+
+@media all and (max-width: 1200px) {
+  #main {
+    margin-left: 5%;
+  }
+  #header-div {
+    width: 75% !important;
+  }
+
+  #form-div {
+    margin-bottom: 300px;
+  }
 }
 
 /*Details boxes*************************************************************/
