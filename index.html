@@ -22,39 +22,41 @@
   </div>
 
 <div id="main">
-<div id="header-div">
-  <h1 id="header">Accessibility Lunch & Learn</h1>
-</div>
+  <div id="header-div">
+    <h1 id="header">Accessibility Lunch & Learn</h1>
 
-<div id="info">
-  <p>We want to help you protect your company and serve your customers by making your website accessible to everyone.
-    While ecommerce, banking, dining, medical and hospitality industries are targeted most for accessibility lawsuits,
-    every website benefits from accessibility. We specialize in WCAG 2.1 AA compliance and partner with an accessibility auditor to test your website.
-<br><br>Come join First Scribe and our team of experts for our Accessibility Lunch & Learn event to know more about how accessibility
-compliance is affecting your website and what to do about it.
-  </p>
-</div>
+    <div id="info">
+      <p>We want to help you protect your company and serve your customers by making your website accessible to everyone.
+        While ecommerce, banking, dining, medical and hospitality industries are targeted most for accessibility lawsuits,
+        every website benefits from accessibility. We specialize in WCAG 2.1 AA compliance and partner with an accessibility auditor to test your website.
+        <br><br>Come join First Scribe and our team of experts for our Accessibility Lunch & Learn event to know more about how accessibility
+        compliance is affecting your website and what to do about it.
+      </p>
+    </div>
+  </div>
 
-<form name="rsvp" target="hidden_iframe" onsubmit="return validate()" method="post"
-action="https://docs.google.com/forms/d/e/1FAIpQLSfel7UZB6sbaMhjB7i3_UUTMVqYhXNcN2282k6jDi7LSx6UGg/formResponse?">
+<div id="form-div">
   <h2>RSVP</h2>
-  <div class="row">
-    <label>First Name:</label>
-    <input type="text" id="first-name" name="entry.1115986317" autocomplete="off" onchange="resetStyle(this)">
-    <span id="fn-error"></span>
+  <form name="rsvp" target="hidden_iframe" onsubmit="return validate()" method="post"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSfel7UZB6sbaMhjB7i3_UUTMVqYhXNcN2282k6jDi7LSx6UGg/formResponse?">
+    <div class="row">
+      <label>First Name:</label>
+      <input type="text" id="first-name" name="entry.1115986317" autocomplete="off" onchange="resetStyle(this)">
+      <span id="fn-error"></span>
+    </div>
+    <div class="row">
+      <label>Last Name:</label>
+      <input type="text" id="last-name" name="entry.418842620" autocomplete="off" onchange="resetStyle(this)">
+      <span id="ln-error"></span>
+    </div>
+    <div class="row">
+      <label>E-mail:</label>
+      <input type="text" id="e-mail" name="entry.987508438" autocomplete="off" onchange="resetStyle(this)">
+      <span id="em-error"></span>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
   </div>
-  <div class="row">
-    <label>Last Name:</label>
-    <input type="text" id="last-name" name="entry.418842620" autocomplete="off" onchange="resetStyle(this)">
-    <span id="ln-error"></span>
-  </div>
-  <div class="row">
-    <label>E-mail:</label>
-    <input type="text" id="e-mail" name="entry.987508438" autocomplete="off" onchange="resetStyle(this)">
-    <span id="em-error"></span>
-  </div>
-  <button type="submit">Submit</button>
-</form>
 </div>
 
 
@@ -72,7 +74,6 @@ action="https://docs.google.com/forms/d/e/1FAIpQLSfel7UZB6sbaMhjB7i3_UUTMVqYhXNc
 
 <div id="bottomBar"></div>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
 
 
 
