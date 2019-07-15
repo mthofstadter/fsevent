@@ -11,24 +11,29 @@ body {
 }
 
 /*Background & Logo *****************************************************/
-#bkg {
+#bkg-div {
   position: absolute;
-  margin-top: -50px;
+  margin-top: -85px;
   margin-left: -10px;
   z-index: -1;
   overflow: hidden;
 }
 
-#bkg img {
-  max-width: 100%;
-}
 
-#background_img {
+#bkg-img {
   width: 100%;
   min-width: 1500px;
   filter: blur(10px);
   height: auto;
   overflow: hidden;
+}
+
+@media all and (max-width: 600px) {
+
+  #bkg-div {
+    max-width: 100%;
+    object-fit: cover;
+  }
 }
 
 #logo {
@@ -212,6 +217,9 @@ button:hover {
   text-align: center;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   -webkit-transition: background-color 0.2s ease-out;
   -moz-transition: background-color 0.2s ease-out;
@@ -275,7 +283,9 @@ button:hover {
     font-size: 36px;
   }
 
-  #address {
+  #address p {
+    margin: 0;
+    line-height: 30px;
     font-size: 30px;
   }
 
