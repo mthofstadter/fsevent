@@ -259,11 +259,32 @@ button:hover {
     margin-left: 5%;
   }
 
-  #bottomBar {
-    display: none;
+  #bottom-Rel {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
   }
 
+  #bottomBar {
+    position: absolute;
+    top: -500px;
+    height: 500px;
+  }
+
+  #date {
+    font-size: 36px;
+  }
+
+  #address {
+    font-size: 30px;
+  }
+
+  #location {
+    font-size: 34px;
+  }
+
+
   .infoBox {
-    width: 70% !important;
+    width: 90% !important;
   }
 }
