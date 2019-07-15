@@ -104,7 +104,7 @@ h2 {
 
 #form-div {
   width: 380px;
-  margin-bottom: 50px;
+  margin-bottom: 300px;
 }
 
 .row {
@@ -236,6 +236,11 @@ button:hover {
 }
 
 @media all and (max-width: 920px) {
+
+  #form-div {
+    margin-bottom: 50px;
+  }
+
   #boxContainer {
     position: relative;
     flex-flow: column;
