@@ -16,6 +16,7 @@ body {
   margin-top: -50px;
   margin-left: -10px;
   z-index: -1;
+  overflow: hidden;
 }
 
 #background_img {
@@ -23,6 +24,7 @@ body {
   min-width: 1500px;
   filter: blur(10px);
   height: auto;
+  overflow: hidden;
 }
 
 #logo {
@@ -52,6 +54,10 @@ h1 {
   }
   #header-div {
     width: 75% !important;
+  }
+
+  #form-div {
+    margin-bottom: 300px;
   }
 }
 
@@ -254,6 +260,6 @@ button:hover {
   }
 
   .infoBox {
-    width: 50% !important;
+    width: 70% !important;
   }
 }
